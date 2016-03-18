@@ -18,7 +18,10 @@ PHP 5 or higher
  * Download the PHP-wrapper package from **[here](http://www.fusioncharts.com/php-charts/)**
  * Unzip the archieve and move to "wrappers 2/php-wrapper/" to get the main class file "fusioncharts.php"
  * Include fusioncharts.php in your project.
- * Start using methods and classes available under **"FusionCharts.Charts"** namespace to generate Charts in your project. See below the usage guide
+ * Start using methods and classes available under **"FusionCharts.Charts"** namespace to generate Charts in your project. 
+ 
+
+See below the usage guide
  ### Usage Guide
 #### Step 1:
 **Include the wrapper file in your PHP page as follows**
