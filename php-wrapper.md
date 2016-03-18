@@ -22,7 +22,8 @@ PHP 5 or higher
  
 
 See below the usage guide
- ### Usage Guide
+
+### Usage Guide
 #### Step 1:
 **Include the wrapper file in your PHP page as follows**
 ```php
