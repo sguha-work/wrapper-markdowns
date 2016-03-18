@@ -20,7 +20,7 @@ PHP 5 or higher
  * Include "fusioncharts.php" in your project(Check **[usage guide](#usage-guide)** for details).
  * Start using methods and classes available under **"FusionCharts.Charts"** namespace to generate Charts in your project. 
  
-**Note : You need to have FusionCharts JS libraries installed inside your project to work with the wrapper
+**Note : You need to have FusionCharts JS libraries installed inside your project to work with the wrapper**
 
 See below the usage guide
 
