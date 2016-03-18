@@ -101,7 +101,7 @@ $columnChart->render();
 ### More examples
 For more examples of using FusionCharts PHP wrapper visit our **[PHP-Charts page](http://www.fusioncharts.com/php-charts/)**
 
-### Program Descriptionl
+### Program Description
 ##### Chart Class (FusionCharts)
 Represent the FusionCharts class that can be initialized to create a chart.
 ###### **Constructor parameters:**
