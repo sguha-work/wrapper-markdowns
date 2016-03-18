@@ -7,7 +7,7 @@ FusionCharts Suite XT uses JavaScript to generate charts in the browser. Where u
 ### How does the wrapper work?
 Charts are generated in the browsers with the help of JavaScript and the HTML code.
 Using this PHP wrapper we can generate the required JavaScript and HTML code as a string in the server. We can put this strings in the page to generate charts.
-l
+
 ### Version
 1.0
 
@@ -15,9 +15,10 @@ l
 PHP 5 or higher
 
 ### Installation
- * 
- * Include FusionCharts.php in your project.
- * Start using methods and classes available under **"FusionCharts.Charts"** namespace to generate Charts in your project.
+ * Download the PHP-wrapper package from **[here](http://www.fusioncharts.com/php-charts/)**
+ * Unzip the archieve and move to "wrappers 2/php-wrapper/" to get the main class file "fusioncharts.php"
+ * Include fusioncharts.php in your project.
+ * Start using methods and classes available under **"FusionCharts.Charts"** namespace to generate Charts in your project. See below the usage guide
  ### Usage Guide
 #### Step 1:
 **Include the wrapper file in your PHP page as follows**
@@ -72,6 +73,9 @@ PHP 5 or higher
 ```php
 $columnChart->render();
 ```
+### More examples
+For more examples of using FusionCharts PHP wrapper visit our **[PHP-Charts page](http://www.fusioncharts.com/php-charts/)**
+
 ### Program Descriptionl
 ##### Chart Class (FusionCharts)
 Represent the FusionCharts class that can be initialized to create a chart.
