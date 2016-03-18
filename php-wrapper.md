@@ -37,7 +37,15 @@ Write a script tag in the <head> section of the page as follows which hold the s
 ```html
 <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
 ```
-    
+**Using library files placed in a folder of your project**
+
+You may download the trial version of FusionCharts from **[here](http://www.fusioncharts.com/download/)**
+
+Assuming that you have the FusionCharts library and placed them inside the folder "fusioncharts" in your project, now write a script tag in the <head> section of the page as follows which hold the src of FusionCharts libary link from local folder
+```html
+<script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+```
+Now you are ready to prepare the chart using our PHP-wrapper.
 #### Using the wrapper
 #### Step 1:
 **Include the wrapper file in your PHP page as follows**
