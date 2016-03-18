@@ -22,8 +22,6 @@ PHP 5 or higher
  
 **Note : You need to have FusionCharts JS libraries installed inside your project to work with the wrapper**
 
-See below the usage guide
-
 ### Usage Guide
 
 #### Installing FusionCharts JS libraries in your page where you want to display FusionCharts
