@@ -86,6 +86,11 @@ Public method to generate html code for rendering chart. This function assumes t
 			   ]
 		}');
 ```
+#### Step 3:
+**Render the chart**
+```php
+$columnChart->render();
+```
 ### License
 
 **FUSIONCHARTS:**
