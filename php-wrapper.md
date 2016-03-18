@@ -17,13 +17,28 @@ PHP 5 or higher
 ### Installation
  * Download the PHP-wrapper package from **[here](http://www.fusioncharts.com/php-charts/)**
  * Unzip the archieve and move to "wrappers 2/php-wrapper/" to get the main class file "fusioncharts.php"
- * Include fusioncharts.php in your project.
+ * Include "fusioncharts.php" in your project(Check **[usage guide](#usage-guide)** for details).
  * Start using methods and classes available under **"FusionCharts.Charts"** namespace to generate Charts in your project. 
  
+**Note : You need to have FusionCharts JS libraries installed inside your project to work with the wrapper
 
 See below the usage guide
 
 ### Usage Guide
+
+#### Installing FusionCharts JS libraries in your page where you want to display FusionCharts
+There are two ways you can install FusionCharts JS libray in your project
+* Using FusionCharts CDN
+* Using library files placed in a folder of your project
+
+**Using FusionCharts CDN**
+
+Write a script tag in the <head> section of the page as follows which hold the src of FusionCharts libary link from official CDN
+```html
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+```
+    
+#### Using the wrapper
 #### Step 1:
 **Include the wrapper file in your PHP page as follows**
 ```php
