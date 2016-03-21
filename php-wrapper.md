@@ -2,11 +2,10 @@
 
 ### What is FusionCharts PHP wrapper?
 
-FusionCharts Suite XT uses JavaScript to generate charts in a browser. Using our PHP server side wrapper you can create charts in your PHP website without writing any Javascript code. 
+The FusionCharts PHP server-side wrapper lets you create charts in your PHP website without writing any JavaScript code.
 
 ### How does this wrapper work?
-Charts are generated in a browser with the help of JavaScript and the HTML code.
-Using this PHP wrapper you can generate the required JavaScript and HTML code as a string in the server. You can put the strings in a page to generate charts.
+Conventionally, FusionCharts Suite XT uses JavaScript and HTML to generate charts in the browser. The PHP wrapper lets you generate the required JavaScript and HTML code as a string on the server. This string is then used to render charts on a browser page.
 
 ### Version
 1.0
@@ -15,12 +14,12 @@ Using this PHP wrapper you can generate the required JavaScript and HTML code as
 PHP 5 or higher
 
 ### Installation
- * Download the **[`PHP-wrapper package`](http://www.fusioncharts.com/php-charts/)**
- * Unzip the archieve and move to "wrappers 2/php-wrapper/" to get the main class file "fusioncharts.php"
- * Include "fusioncharts.php" in your project(Check **[usage guide](#usage-guide)** for details).
- * Start using methods and classes available under **"FusionCharts.Charts"** namespace to generate Charts in your project. 
+ * Download the **[`PHP wrapper package`](http://www.fusioncharts.com/php-charts/)**
+ * Unzip the archive and move to "wrappers 2/php-wrapper/" to get the main class file "fusioncharts.php"
+ * Include "fusioncharts.php" in your project(Check **[the usage guide](#usage-guide)** for details).
+ * Start using the methods and classes available under the **FusionCharts.Charts** namespace to generate charts in your project.. 
  
-**Note : FusionCharts JS libraries should already be installed inside your project to work with this wrapper**
+**Note : FusionCharts JS libraries should already be installed within your project in order to work with this wrapper.**
 
 ### Usage Guide
 
@@ -31,7 +30,7 @@ There are two ways you can install FusionCharts JS libray in your project
 
 **Using FusionCharts CDN**
 
-Write a script tag in the <head> section of the page where you add the src of FusionCharts libary link from official CDN :
+Write a script tag in the <head> section of the page where you want to add the source of the FusionCharts library link from the official CDN:
 ```html
 <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
 ```
