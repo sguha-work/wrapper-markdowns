@@ -1,4 +1,4 @@
-# FusionCharts ASP.NET Wrapper
+# FusionCharts ASP.NET with C# Wrapper
 
 ### What is FusionCharts .NET wrapper?
 
@@ -6,7 +6,7 @@ FusionCharts Suite XT uses JavaScript to generate charts in the browser. Where u
 
 ### How does the wrapper work?
 Charts are generated in the browsers with the help of JavaScript and the HTML code.
-Using this ASP.NET wrapper we can generate the required JavaScript and HTML code as a string in the server. We can put this strings in the page to generate charts.
+Using this ASP.NET C# wrapper we can generate the required JavaScript and HTML code as a string in the server. We can put this strings in the page to generate charts.
 
 ### Version
 1.2
@@ -15,9 +15,9 @@ Using this ASP.NET wrapper we can generate the required JavaScript and HTML code
 .NET Framework 3.5 or higher
 
 ### Installation
- * Add a reference of the FusionCharts assembly in your project.
- * Start using methods and classes available under **"FusionCharts.Charts"** namespace to generate Charts in your project.
- * For a woking sample, the "asp-net-wrapper.zip" can be used.
+ * Download the **[`ASP C# wrapper package`](http://www.fusioncharts.com/downloads/wrappers/asp-net-wrapper.zip)**
+ * Unzip the archieve and move to "asp-net-wrapper/Src/" folder to get the file "FusionCharts.cs"
+ * Add the file inside your project by right clicking on the project name from "Solution Explorer" and selecting "Add->Existing item". Don't forget to select the file type as "Code Files" from the file explorer window that appers. Select the "FusionCharts.cs" file from the explorer and click on "Add".
  
 ### Usage
 ##### Chart Class (FusionCharts.Charts)
