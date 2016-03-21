@@ -50,7 +50,7 @@ Now, you are ready to prepare the chart using our PHP-wrapper.
     include("fusioncharts.php");
 ```
 #### Step 2:
-**Create the chart object which consists of required infomation. For details about the constructor and it's parameters check [`program description`](#program-description)**
+**Create the chart object which consists of required infomation. For details about the constructor and it's parameters check [`Constructor Parameters`](#constructor-parameters)**
 Represents the FusionCharts class that can be initialized to create a chart.
 ###### **Constructor parameters:**
 Following parameters can be used in a constructor in the order they are described. Some parameters are optional. This function assumes that you've already included the FusionCharts JavaScript library to your page.
