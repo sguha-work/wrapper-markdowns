@@ -50,7 +50,7 @@ Now, you are ready to prepare the chart using our PHP-wrapper.
     include("fusioncharts.php");
 ```
 #### Step 2:
-**Create the chart object with needed info as shown below. For details about the constructor and it's parameters check [program description](#program-description)**
+**Create the chart object with needed info as shown below. For details about the constructor and it's parameters check [constructor parameters](#constructor-parameters)**
 ```php
     $columnChart = new FusionCharts(
 			"column2d", 
