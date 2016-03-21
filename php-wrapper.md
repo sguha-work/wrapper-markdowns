@@ -50,8 +50,55 @@ Now, you are ready to prepare the chart using our PHP-wrapper.
     include("fusioncharts.php");
 ```
 #### Step 2:
-**Create the chart object which consists of required infomation. For details about the constructor and it's parameters check [`Constructor Parameters`](#constructor-parameters)**
-Represents the FusionCharts class that can be initialized to create a chart.
+**Create the chart object with needed info as shown below. For details about the constructor and it's parameters check [program description](#program-description)**
+```php
+    $columnChart = new FusionCharts(
+			"column2d", 
+			"ex1" , 
+			"600", 
+			"400", 
+			"chart-1", 
+			"json", 
+			'{  
+			   "chart":
+			   {  
+				  "caption":"Harry\'s SuperMart",
+				  "subCaption":"Top 5 stores in last month by revenue",
+				  "numberPrefix":"$",
+				  "theme":"ocean"
+			   },
+			   "data":
+			   [  
+				  {  
+					 "label":"Bakersfield Central",
+					 "value":"880000"
+				  },
+				  {  
+					 "label":"Garden Groove harbour",
+					 "value":"730000"
+				  },
+				  {  
+					 "label":"Los Angeles Topanga",
+					 "value":"590000"
+				  },
+				  {  
+					 "label":"Compton-Rancho Dom",
+					 "value":"520000"
+				  },
+				  {  
+					 "label":"Daly City Serramonte",
+					 "value":"330000"
+				  }
+			   ]
+		}');
+```
+
+#### Step 3:
+**Render the chart**
+```php
+$columnChart->render();
+```
+
 ### **Constructor parameters:**
 Following parameters can be used in a constructor in the order they are described. Some parameters are optional. This function assumes that you've already included the FusionCharts JavaScript library to your page.
 
