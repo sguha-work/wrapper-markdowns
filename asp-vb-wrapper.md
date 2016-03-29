@@ -1,4 +1,4 @@
-# FusionCharts ASP.NET with C# Wrapper
+# FusionCharts ASP.NET with VB Wrapper
 
 ### What is FusionCharts .NET wrapper?
 
@@ -6,18 +6,18 @@ FusionCharts Suite XT uses JavaScript to generate charts in the browser. Where u
 
 ### How does the wrapper work?
 Charts are generated in the browsers with the help of JavaScript and the HTML code.
-Using this ASP.NET C# wrapper we can generate the required JavaScript and HTML code as a string in the server. We can put this strings in the page to generate charts.
+Using this ASP.NET VB wrapper we can generate the required JavaScript and HTML code as a string in the server. We can put this strings in the page to generate charts.
 
 ### Version
-1.2
+1.0
 
 ### Requirements
 .NET Framework 3.5 or higher
 
 ### Installation
- * Download the **[`ASP C# wrapper package`](http://www.fusioncharts.com/downloads/wrappers/asp-net-wrapper.zip)**
- * Unzip the archieve and move to "asp-net-wrapper/Src/" folder to get the file "FusionCharts.cs"
- * Add the file inside your project by right clicking on the project name from "Solution Explorer" and selecting "Add->Existing item". Don't forget to select the file type as "Code Files" from the file explorer window that appers. Select the "FusionCharts.cs" file from the explorer and click on "Add".
+ * Download the **[`ASP VB wrapper package`](https://github.com/fusioncharts/vb-net-wrapper/archive/master.zip)**
+ * Unzip the archieve and move to "vb-net-wrapper-master/App_Code/" folder to get the file "FusionCharts.vb"
+ * Add the file inside your project by right clicking on the project name from "Solution Explorer" and selecting "Add->Existing item". Don't forget to select the file type as "Code Files" from the file explorer window that appers. Select the "FusionCharts.vb" file from the explorer and click on "Add".
  
 ### Usage
 #### Installing FusionCharts JS libraries in your page where you want to display FusionCharts
@@ -39,16 +39,16 @@ Assuming you have the FusionCharts library placed inside the folder "fusionchart
 ```html
 <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
 ```
-Now, you are ready to prepare the chart using our PHP-wrapper.
+Now, you are ready to prepare the chart using our ASP-VB-wrapper.
 
 #### Using the wrapper
 #### Step 1:
-**Include the wrapper file (`FusionCharts.cs`) to your CS page:**
+**Include the wrapper file (`FusionCharts.vb`) to your VB page:**
 
 * Install the package inside your project (See [Installation Guide](#Installation))
 * Add the refference of the file to the page where you want to display FusionCharts. To do so write the following code befor the class description begins of your page.
-```c#
-using FusionCharts.charts;
+```vb
+Imports FusionCharts.charts;
 ```
 #### Step 2:
 **Add a asp literal to the aspx page where FusionCharts will be displayed**
@@ -57,30 +57,31 @@ using FusionCharts.charts;
 ```
 #### Step 3:
 **Create the chart object which consists of required infomation. For details about the constructor and it's parameters check [`Constructor Parameters`](#constructor-parameters) Also set the information needed for a chart**
-```c#
-        Chart sales = new Chart();
+```vb
+        Dim sales As New Chart()
 
-		// Setting chart id
-		sales.SetChartParameter(Chart.ChartParameter.chartId, "myChart");
+        ' Setting chart id
+        sales.SetChartParameter(Chart.ChartParameter.chartId, "myChart")
 
-		// Setting chart type to Column 3D chart
-		sales.SetChartParameter(Chart.ChartParameter.chartType, "column3d");
+        ' Setting chart type to Column 3D chart
+        sales.SetChartParameter(Chart.ChartParameter.chartType, "column3d")
 
-		// Setting chart width to 600px
-		sales.SetChartParameter(Chart.ChartParameter.chartWidth, "600");
+        ' Setting chart width to 500px
+        sales.SetChartParameter(Chart.ChartParameter.chartWidth, "600")
 
-		// Setting chart height to 350px
-		sales.SetChartParameter(Chart.ChartParameter.chartHeight, "350");
+        ' Setting chart height to 400px
+        sales.SetChartParameter(Chart.ChartParameter.chartHeight, "350")
 
-		// Setting chart data as JSON String (Uncomment below line  
-		sales.SetData("{\"chart\":{\"caption\":\"Monthly\",\"xaxisname\":\"Month\",\"yaxisname\":\"Revenue\",\"numberprefix\":\"$\",\"showvalues\":\"1\",\"animation\":\"0\"},\"data\":[{\"label\":\"Jan\",\"value\":\"420000\"},{\"label\":\"Feb\",\"value\":\"910000\"},{\"label\":\"Mar\",\"value\":\"720000\"},{\"label\":\"Apr\",\"value\":\"550000\"},{\"label\":\"May\",\"value\":\"810000\"},{\"label\":\"Jun\",\"value\":\"510000\"},{\"label\":\"Jul\",\"value\":\"680000\"},{\"label\":\"Aug\",\"value\":\"620000\"},{\"label\":\"Sep\",\"value\":\"610000\"},{\"label\":\"Oct\",\"value\":\"490000\"},{\"label\":\"Nov\",\"value\":\"530000\"},{\"label\":\"Dec\",\"value\":\"330000\"}],\"trendlines\":[{\"line\":[{\"startvalue\":\"700000\",\"istrendzone\":\"1\",\"valueonright\":\"1\",\"tooltext\":\"AYAN\",\"endvalue\":\"900000\",\"color\":\"009933\",\"displayvalue\":\"Target\",\"showontop\":\"1\",\"thickness\":\"5\"}]}],\"styles\":{\"definition\":[{\"name\":\"CanvasAnim\",\"type\":\"animation\",\"param\":\"_xScale\",\"start\":\"0\",\"duration\":\"1\"}],\"application\":[{\"toobject\":\"Canvas\",\"styles\":\"CanvasAnim\"}]}}", Chart.DataFormat.json);
+        ' Setting chart data as JSON String 
+        sales.SetData("{'chart':{'caption':'Monthly','xaxisname':'Month','yaxisname':'Revenue','numberprefix':'$','showvalues':'1','animation':'0'},'data':[{'label':'Jan','value':'420000'},{'label':'Feb','value':'910000'},{'label':'Mar','value':'720000'},{'label':'Apr','value':'550000'},{'label':'May','value':'810000'},{'label':'Jun','value':'510000'},{'label':'Jul','value':'680000'},{'label':'Aug','value':'620000'},{'label':'Sep','value':'610000'},{'label':'Oct','value':'490000'},{'label':'Nov','value':'530000'},{'label':'Dec','value':'330000'}],'trendlines':[{'line':[{'startvalue':'700000','istrendzone':'1','valueonright':'1','tooltext':'AYAN','endvalue':'900000','color':'009933','displayvalue':'Target','showontop':'1','thickness':'5'}]}],'styles':{'definition':[{'name':'CanvasAnim','type':'animation','param':'_xScale','start':'0','duration':'1'}],'application':[{'toobject':'Canvas','styles':'CanvasAnim'}]}}", Chart.DataFormat.json)
+
 
 ```
 #### Step 4:
 **Render the chart**
 
-```c#
-Literal1.Text = sales.Render();
+```vb
+Literal1.Text = sales.Render()
 ```
 ##### Chart Class (FusionCharts.Charts)
 Represent the FusionCharts class that can be initialized to create a chart.
@@ -139,17 +140,8 @@ Public method to generate html code for rendering chart. This function assumes t
 
 ###### **Clone**
 Clone method can be used to clone an existing chart instance. All properties except the chartId of the parent chart instance will be cloned into the child instance. 
-```cs
-Chart sales = new Chart("column3d", "myChart", "400", "300", "xmlurl", "data/data.xml");
-//Render the column3D chart
-Literal1.Text = sales.Render();
-Chart salesClone = (Chart)sales.clone();
-salesClone.SetChartParameter(Chart.ChartParameter.chartType, "column2d");
-//Render the column2D chart
-Literal2.Text = salesClone.Render();
-```
 
-###License
+### License
 
 **FUSIONCHARTS:**
 
