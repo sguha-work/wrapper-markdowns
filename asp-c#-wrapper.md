@@ -51,7 +51,13 @@ Now, you are ready to prepare the chart using our PHP-wrapper.
 using FusionCharts.charts;
 ```
 #### Step 2:
+**Add a asp literal to the aspx page where FusionCharts will be displayed**
+```HTML
+ <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+```
+#### Step 3:
 **Create the chart object which consists of required infomation. For details about the constructor and it's parameters check [`Constructor Parameters`](#constructor-parameters)**
+
 
 ##### Chart Class (FusionCharts.Charts)
 Represent the FusionCharts class that can be initialized to create a chart.
@@ -70,7 +76,7 @@ Following parameters can be used in the constructor in the order as they are des
 |bgOpacity | `String` | Background opacity of the chart container. e.g. `1`|
 
 ##### Methods under Chart class
-l
+
 ###### **SetChartParameter**
 This method can be used to set or modified various chart paramerers like `chartType`, `chartWidth`, `chartHeight` etc. The method has following parameters:
 
