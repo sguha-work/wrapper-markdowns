@@ -39,7 +39,7 @@ Assuming you have the FusionCharts library placed inside the folder "fusionchart
 ```html
 <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
 ```
-Now, you are ready to prepare the chart using our PHP-wrapper.
+Now, you are ready to prepare the chart using our ASP-C#-wrapper.
 
 #### Using the wrapper
 #### Step 1:
