@@ -20,6 +20,39 @@ Using this ASP.NET C# wrapper we can generate the required JavaScript and HTML c
  * Add the file inside your project by right clicking on the project name from "Solution Explorer" and selecting "Add->Existing item". Don't forget to select the file type as "Code Files" from the file explorer window that appers. Select the "FusionCharts.cs" file from the explorer and click on "Add".
  
 ### Usage
+#### Installing FusionCharts JS libraries in your page where you want to display FusionCharts
+There are two ways you can install FusionCharts JS libray in your project
+* Using FusionCharts CDN
+* Using library files placed in the folder of your project
+
+**Using FusionCharts CDN**
+
+Write a script tag in the <head> section of the page where you want to add the source of the FusionCharts library link from the official CDN:
+```html
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+```
+**Using library files placed in a folder of your project**
+
+You can download the **[`trial version`](http://www.fusioncharts.com/download/)** of FusionCharts.
+
+Assuming you have the FusionCharts library placed inside the folder "fusioncharts" in your project, now write a script tag in the <head> section of the page where you add the src of FusionCharts libary link from local folder
+```html
+<script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+```
+Now, you are ready to prepare the chart using our PHP-wrapper.
+
+#### Using the wrapper
+#### Step 1:
+**Include the wrapper file (`FusionCharts.cs`) to your CS page:**
+
+* Install the package inside your project (See [Installation Guide](#Installation))
+* Add the refference of the file to the page where you want to display FusionCharts. To do so write the following code befor the class description begins of your page.
+```c#
+using FusionCharts.charts;
+```
+#### Step 2:
+**Create the chart object which consists of required infomation. For details about the constructor and it's parameters check [`Constructor Parameters`](#constructor-parameters)**
+
 ##### Chart Class (FusionCharts.Charts)
 Represent the FusionCharts class that can be initialized to create a chart.
 ###### **Constructor parameters:**
@@ -37,7 +70,7 @@ Following parameters can be used in the constructor in the order as they are des
 |bgOpacity | `String` | Background opacity of the chart container. e.g. `1`|
 
 ##### Methods under Chart class
-
+l
 ###### **SetChartParameter**
 This method can be used to set or modified various chart paramerers like `chartType`, `chartWidth`, `chartHeight` etc. The method has following parameters:
 
